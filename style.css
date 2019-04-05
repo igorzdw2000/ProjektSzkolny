@@ -1,0 +1,231 @@
+body{
+    background-color: dimgray;
+    margin:0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+}
+
+#kontener{
+    width:100%;
+    height:auto;
+}
+
+#pasek-inf{
+    background-color: aliceblue;
+    height:50px;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+    position:fixed;
+    z-index: 99;
+    top:0;
+}
+
+#pasek-inf h2{
+    color:deepskyblue;
+    margin: 0px 10px 10px 30px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+#pasek-inf a {
+    margin: 10px 10px 10px 10px;
+}
+
+#pasek-inf ul{
+    margin: 10px 10px 10px 0px;
+    padding:0;
+}
+
+#pasek-inf li{
+    display: inline-block;
+}
+
+#pasek-inf a:hover{
+    color: crimson;
+}
+#pasek-inf .search-container
+{
+		margin: 10px 10px 10px 0px;
+		float:right;
+		trasform: translate(-50%,-50%);
+		background-color:#30332E;
+		height:25px;
+		border-radius: 25px;
+		padding:5px;
+
+
+}	
+#pasek-inf .search-btn
+{
+	float:right;
+	height:15px;
+	width:15px;
+	border-radius: 45%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:5px 5px 5px 5px;
+	
+	
+}
+#pasek-inf .search-txt
+{
+	background:none;
+	outline:none;
+	float:left;
+	padding:0;
+	color: white;
+	font-size:15px;
+	transition:0.4s;
+	line-height:25px;
+	border:none;
+	width:0;
+}
+#pasek-inf .search-container:hover > .search-txt
+{
+	width:150px;
+	
+}
+
+#pasek-main{
+    background-color: #30332E;
+    height:90px;
+    display: flex;
+    position: sticky;
+    top:50px;
+}
+
+#pasek-main ul{
+    color:white;
+    font-size:25px;
+    width:70%;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#pasek-main li{
+    display: inline-block; 
+}
+
+#pasek-main a{
+    color:white;
+}
+
+#pasek-main a:hover{
+    color: crimson;
+}
+
+.slajder {
+    width:100%;
+    height:700px;
+    position: relative;
+    display:block;
+    margin-top:50px;
+}
+
+.poprzedni, .nastepny {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 97;
+}
+
+.mySlides{
+    position: relative;
+    z-index: 97;
+    width:100%;
+    height:100%;
+}
+
+#tlo1{
+    background: url(img/kuba.jpg) no-repeat top /cover;
+    width:100%;
+    height:100%;
+}
+
+#tlo2{
+    background: url(img/hisz.jpg) no-repeat top /cover;
+    width:100%;
+    height:100%;
+}
+
+#tlo3{
+    background: url(img/legjag.jpg) no-repeat top /cover;
+    width:100%;
+    height:100%;
+}
+
+.nastepny {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.poprzedni:hover, .nastepny:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.przejscie {
+  -webkit-animation-name: przejscie;
+  -webkit-animation-duration: 1.5s;
+  animation-name: przejscie;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes przejscie {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes przejscie {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .poprzedni, .nastepny {font-size: 11px}
+}
+
+#stałykontent{
+    height:800px;
+    background-color: #62BBC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stopka{
+    display: flex;
+    height:80px;
+    background-color: #EC058E;
+}
+
+#stopka ul{
+    color:white;
+    width:80%;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#stopka li{
+    display: inline-block; 
+}
